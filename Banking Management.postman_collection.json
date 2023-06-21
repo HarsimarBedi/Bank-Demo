@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "bef2bbb2-45f1-4d8b-aeb6-8b244c82aa37",
+		"name": "Banking Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28095531"
+	},
+	"item": [
+		{
+			"name": "GetAccountsOfUsers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/accounts/1201",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"accounts",
+						"1201"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAccountsOfUsersInvalidCase",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/accounts/-1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"accounts",
+						"-1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetTransactionsOfAccount",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/accounts/transactions/4567789012349876",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"accounts",
+						"transactions",
+						"4567789012349876"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetTransactionsOfAccountInvalidCase",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/accounts/transactions/harsimar16",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"accounts",
+						"transactions",
+						"harsimar16"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAccountsOfUserEmpty",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/accounts/1202",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"accounts",
+						"1202"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetTransactionsOfAccountsEmpty",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/accounts/transactions/4567789012349870",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"accounts",
+						"transactions",
+						"4567789012349870"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
